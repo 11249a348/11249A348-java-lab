@@ -1,3 +1,19 @@
+Aim:
+  To write a Java program to demonstrate thread priority using multiple threads.
+
+Algorithm:
+1.Start the program.
+2.Create three classes A, B, and C by extending the Thread class.
+3.Override the run() method in each class.
+4.Create objects for threads A, B, and C.
+5.Set the priority of thread A to minimum priority.
+6.Set the priority of thread B to one level higher than thread A.
+7.Set the priority of thread C to maximum priority.
+8.Start threads A, B, and C using the start() method.
+9.Display the messages and values from each thread.
+10.Stop the program.
+
+program:
 import java.io.*;
 class A extends Thread
 {
@@ -55,3 +71,30 @@ threadC.start();
 System.out.println("end of main thread");
 }
 }
+
+output:
+start thread A
+start thread B
+start thread C
+Thread A started
+from thread A i=1
+from thread A i=2
+from thread A i=3
+from thread A i=4
+exit from A
+Thread B started
+from thread B j=1
+from thread B j=2
+from thread B j=3
+from thread B j=4
+exit from B
+thread C started
+thread c =1
+thread c =2
+thread c =3
+thread c =4
+exit from c
+
+Result:
+     Thus, the Java program to demonstrate thread creation and thread priority using multiple threads was successfully executed.
+end of main thread
